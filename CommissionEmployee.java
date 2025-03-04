@@ -5,8 +5,8 @@ public class CommissionEmployee {
     private String firstName;
     private String lastName;
     private String socialSecurityNumber;
-    private double grossSales;
-    private double commissionRate;
+    public double grossSales;
+    public double commissionRate;
 
     //setting up the constructor to initialize the values
     public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
@@ -90,7 +90,7 @@ public class CommissionEmployee {
             System.out.println(worker);
             System.out.printf("Earnings: %.2f%n%n", worker.earnings());
 
-            //next we update the values for the grossSales and commissionrate
+            //next we update the values for the grossSales and commissionRate
             worker.setGrossSales(8601.09);
             worker.setCommissionRate(0.1);
 
